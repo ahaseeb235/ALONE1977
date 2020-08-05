@@ -54,18 +54,18 @@
 		}
 		
 		a:link {
-		  color: grey;
+		  color: #409CF9;
 		  background-color: transparent;
 		  font-weight: bold;
 		}
 		a:visited {
-		  color: grey;
+		  color: #409CF9;
 		  background-color: transparent;
 		  text-decoration: none;
 		}
 		a:hover {
-		  color: green;
-		  background-color: transparent;
+		  color: #d40009;
+		  background-color: yellow;
 		  text-decoration: underline;
 		}
 		a:active {
@@ -101,7 +101,7 @@
         
         .thumbnail img {
             border-radius: 50%;
-            border:5px solid #d40009;
+            border: 3px solid #d40009;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0px 10px 15px 0px rgba(0, 0, 0, 0.19);
             
         }
@@ -203,7 +203,7 @@
 		    </div>
             
             <div class="thumbnail col-md-3">
-    		    <img class="images" src="https://www.kccc.ie/portals/0/Albert-Perris.jpg" alt="Sean" width="200">
+    		    <img class="images" src="https://media-exp1.licdn.com/dms/image/C5603AQEYTib267y_IQ/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=z6zwTgrPK0S4_rpMTAaHGrfy4Z0insF2ZFndu9KkFFE" alt="Sean" width="200">
                     <div class="name">
                         <p><strong>Albert Perris</strong></p>
         		        <p>Interim Head of Services</p>
@@ -226,7 +226,7 @@
 	
 <!-- Footer -->	
 	<div class="footer">
-		<p>Having problem viewing the above file, please <a href="mailto:abdul.haseeb@alone.ie">contact us.</a>             <br>
+		<p>Having problem viewing the above file, please <a href="mailto:abdul.haseeb@alone.ie">contact us.</a><br>
 		<!--
 		<span style="font-style: italic; font-size: 10px;">This web page is temporarily hosted on Github, and is only visible to those who have access to the link.</span>
 		-->
@@ -235,42 +235,6 @@
 
 
 	
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>	
 
 
 </body>
