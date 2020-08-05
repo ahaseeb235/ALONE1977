@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>ALONE Organisational Chart</title>
 	
 	<style>
@@ -25,16 +26,20 @@
 			font-family: 'Open Sans', sans-serif;
 		}
 		
-		.paragraph {
-			padding: 0px 20px 20px 20px;
+		.instructions {
+			padding: 25px;
+			display:flex;
+			text-align: center;
 			
 		}
 		
 		.footer {
-			
 			background-color: #d40009;
 			color: #fafafa;
 			font-weight: bold;
+			padding: 15px;
+			text-align: center;
+			margin-top: 10px;
 		}
 		
 		a:link {
@@ -59,7 +64,12 @@
 		}
 		
 		.frame {
-			background: yellow;
+			background: #d40009;
+			padding: 10px;
+		}
+		
+		*{
+			margin: 0px;
 		}
 	</style>
 </head>
@@ -73,18 +83,26 @@
 		<h2 class="heading">ALONE Organisational Structure</h2>
 	</div>
 	
-	<div class="paragraph">
-		<p>To view the organisational structure below, please click on the frame below. You can zoom in and out, and scroll in any direction.</p>
+	<div class="instructions">
+		<p>To view the ALONE organisational structure, <span style="text-decoration: underline; font-weight:bold">please click on the frame below.</span> Or click on the icon ( <i style="font-size:18px" class="fa">&#xf0a6;</i> ) in the middle of the frame. 
+		<br> 
+		You can zoom in and out, and scroll in any direction.</p>
+		
+		
 	</div>
 	
 	
-	<div class="frame">
-		<iframe width="80%" height="1080" src="https://miro.com/app/embed/o9J_kp1HLXM=/?" frameborder="1" scrolling="yes" allowfullscreen>
+	<div>
+		<iframe class="frame" width="80%" height="1080" src="https://miro.com/app/embed/o9J_kp1HLXM=/?" frameborder="4" scrolling="no" allowfullscreen>
 		</iframe>
 	</div>
 	
 	<div class="footer">
-		<p>Having problem viewing the above file, please <a href="mailto:abdul.haseeb@alone.ie">contact us.</a> </p>
+		<p>Having problem viewing the above file, please <a href="mailto:abdul.haseeb@alone.ie">contact us.</a> <br>
+		<!--
+		<span style="font-style: italic; font-size: 10px;">This web page is temporarily hosted on Github, and is only visible to those who have access to the link.</span>
+		-->
+		</p>
 	</div>
 	
 	
